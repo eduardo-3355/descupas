@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eu Sinto Muito</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Cabeçalho */
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.25);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 600;
+      color: #b31237;
+    }
+
+    header nav a {
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      color: #b31237;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    header nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* Seção principal */
+    .hero {
+      margin-top: 120px;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      color: #7a0024;
+      margin-bottom: 10px;
+      animation: fadeIn 1.6s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #4a1c1c;
+      line-height: 1.6;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Carta */
+    .carta {
+      width: 90%;
+      max-width: 800px;
+      margin: 60px auto;
+      background: #ffffffcc;
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      animation: float 4s infinite ease-in-out;
+    }
+
+    .carta h3 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #8b0032;
+    }
+
+    .carta p {
+      font-size: 18px;
+      color: #3d1b1b;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    /* Galeria */
+    .galeria-container {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .galeria-container h2 {
+      font-size: 30px;
+      color: #7a0024;
+      margin-bottom: 30px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Botão final */
+    .final {
+      text-align: center;
+      margin: 60px 0 120px;
+    }
+
+    .final button {
+      padding: 15px 30px;
+      background: #b31237;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .final button:hover {
+      background: #8f0d2d;
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}    
+      to { opacity: 1; transform: translateY(0);}  
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Eu Sinto Muito ❤️</h1>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#carta">Carta</a>
+    <a href="#momentos">Momentos</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <h2>Eu quero me desculpar de verdade...</h2>
+  <p>
+    Sei que a gente brigou… e sei que muito disso aconteceu por falta de maturidade minha. 
+    Eu errei, e você não merecia passar por isso. Eu fiz esse site porque queria te mostrar, 
+    de um jeito especial, que eu realmente sinto muito.
+  </p>
+</section>
+
+<section id="carta" class="carta">
+  <h3>Uma carta para você 💌</h3>
+  <p>
+    Eu deveria ter sido melhor. Em alguns momentos, fui impulsivo, falei sem pensar e deixei que meu 
+    ego falasse mais alto do que meu coração. Mas a verdade é que eu me importo muito com você. 
+    E por isso eu estou aqui, tentando fazer algo diferente, algo sincero. 
+    
+    <br><br>
+    Eu sinto sua falta, sinto falta da maneira como a gente se entende, dos detalhes, das conversas, 
+    das risadas. Mesmo com erros, eu nunca quis te machucar. Eu só quero que você saiba que estou 
+    disposto a amadurecer, evoluir e corrigir tudo o que precise ser corrigido.
+    
+    <br><br>
+    Você merece alguém que te trate com cuidado, paciência e carinho — e eu quero ser essa pessoa.
+  </p>
+</section>
+
+<section id="momentos" class="galeria-container">
+  <h2>Nossos Momentos ✨</h2>
+  <div class="galeria">
+<img src="05c39b38-e778-46c2-a772-2d724e011385.jpg" alt="">  
+<img src="13de07a1-ebd3-4d22-ab0f-e8ade1179740.jpg" alt="">
+<img src="09620756-4aba-428f-8c8c-3e1830f45d5e.jpg" alt="">
+<img src="c9ef79dd-3b9e-4e22-8b45-a9c212f7a01d.jpg" alt="">
+</div>
+</section>
+
+<div class="final">
+  <button onclick="alert('Obrigado por ler até aqui... espero que possamos conversar ❤️')">Eu Te Amo</button>
+</div>
+
+</body>
+</html>
